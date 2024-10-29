@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<head>
+  <title>My Portfolio</title>
+</head>
+<body style="background-color: hsl(274, 90%, 29%);">
+     
+    </body >
+    <header style="width:100%;
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-image: url(image/background-edit.png);
+        background-color: cover;
+        background-position: center;">
+    <nav style="display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;" id="home">
+      <img style="width: 140px;"src="image/logo.gif">
+      <h1 style="text-align: center;font-size: 300%;font-family: courier;color: #310c5e;">Maysa's Portfolio Website</h1>
+      <ul style="padding: 10px 10%;">
+        <li style="display: inline-block;list-style: none;margin: 10px 20px;">
+            <a style="color: #db1384;text-decoration: none;font-size: 22px;position:relative;" href="#home"><b>Home
+            </b></a ></li>
+        <li style="display: inline-block;list-style: none;margin: 10px 20px;">
+            <a style="color: #db1384;text-decoration: none;font-size: 22px;position:relative;"  href="#aboutme"><b>About Me
+            </b></a ></li>
+        <li style="display: inline-block;list-style: none;margin: 10px 20px;">
+            <a style="color: #db1384;text-decoration: none;font-size: 22px;position:relative;" href="#portfolio"><b>Skill
+            </b></a ></li>
+        <li style="display: inline-block;list-style: none;margin: 10px 20px;">
+            <a style="color: #db1384;text-decoration: none;font-size: 22px;position:relative;" href="#contact"><b>Contact
+            </b></a ></li>
+            
+        </ul>
+    </nav>
+    <h2 style="font-size: 60px;margin-top: 20 px;color: #31045b;margin-left: 25px;font-family: 'Courier New', Courier, monospace;">Hi , I'm <span>Maysa</span><br>Welcome to my world</h2>
+  </header>
+ <style>
+    a::after{
+        content:'';
+        width: 0;
+        height:3px;
+        background: #b31fc4;
+        position: absolute;
+        left:0;
+        bottom:-6px;
+        transition: 0.5s;
+    }
+    a:hover::after{
+        width: 100%;
+    }
+    h2 span{
+        color: #a5098e;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+ </style>
+  <article>
+<!--------------about-------------------->
+  <article>
+    <section style="padding: 80px 0;color: #fff;display: flex;justify-content: space-between;flex-wrap: wrap;
+    flex-wrap: 35%;border-radius: 15px;" id ="aboutme">
+                   <div style="display: flex;">
+                    <img class="may" style="flex-wrap: 35%; border-radius: 15px; width: 600px; height: 600px; margin-left: 60px;" src="image/human.png">
+                    <img class="wolf" style="flex-wrap: 35%; border-radius: 15px; width: 600px; height: 600px; margin-left: 20px; display: none;" src="image/wolf.png">
+                </div>
+                <button class="toggle-button"><img style="width :60px; height: 60px;"  src="image/sleep-button.png"></button>
+                
+                <script>
+                    let showWolf = false;
+                
+                    document.querySelector('.toggle-button').addEventListener('click', function() {
+                        const mayImage = document.querySelector('.may');
+                        const wolfImage = document.querySelector('.wolf');
+                
+                        if (showWolf) {
+                            mayImage.style.display = 'flex'; 
+                            wolfImage.style.display = 'none'; 
+                        } else {
+                            mayImage.style.display = 'none'; 
+                            wolfImage.style.display = 'flex'; 
+                        }
+                        
+                        showWolf = !showWolf; 
+                    });
+                </script>                
+                <h3 style="flex-basis: 60%;font-size: 170%;font-family: courier;margin-right: 170x;"><p style="font-size: 200%;">About Me<p >
+                       Hi,My name is Aphichaya Klinhual.<br>I am a first-year computer engineering student at KMUTT.<br>I am interested in game design and want to learn about <br>creating games and related systems. After graduation,<br>I would like to pursue a career in cybersecurity.</p></h3>
+            <div class="container">
+                <div class="Education">
+                    <h2 style="font-size: 80px;font-family: 'Courier New', Courier, monospace;text-align: center;">Education</h2>
+                    <p style="font-family: 'Courier New', Courier, monospace;text-align: center;font-size: 45px;">
+                        <b>Kindergarten-High school</b>
+                    </p>
+                    <img width="300" height="300" src="image/shcool.png">
+                    <p style="font-family: 'Courier New', Courier, monospace;text-align: center;font-size: 45px;">
+                        Sarasas Witaed Bangbon School<br>Science and Mathametics Program</p>
+                    <p style="font-family: 'Courier New', Courier, monospace;font-size: 45px;">
+                        <b>University</b>
+                    </p>
+                    <img width="350" height="300" src="image/kmutt-logo.png">
+                    <p style="font-family: 'Courier New', Courier, monospace;text-align: center;font-size: 45px;">King Mongkut's University of<br> Technology Thonburi</p>
+                    <img width="320" height="300" src="image/cpe-new.png">
+                    <p style="font-family: 'Courier New', Courier, monospace;font-size: 45px;">Bachelor of engineering<br>Program in Inter Computer<br>engineering</p>
+                </div>
+                <div class="skill">
+                    <h2  style="font-size: 80px;font-family: 'Courier New', Courier, monospace;text-align: center;">Skill</h2>
+                    <p style="font-family: 'Courier New', Courier, monospace;font-size: 45px;">
+                        <b>C language</b>
+                    </p>
+                    <img width="370" height="200" src="image/clang-logo.png">
+                    <p  style="font-family: 'Courier New', Courier, monospace;font-size: 45px;">
+                        <b>Cira Core</b>
+                    </p>
+                    <img width="250" height="200" src="image/cira.png">
+                    <p  style="font-family: 'Courier New', Courier, monospace ; font-size: 45px;">
+                        <b>Unity 3D</b>
+                    </p>
+                    <img width="250" height="200" src="image/unity.png">
+                    <p></p>
+                </div>
+    
+<style>
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+} 
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.container{
+    display:flex;
+    gap:50px;
+    justify-content:center;
+    align-items:center;
+}
+.skill{
+    background-color: #27beff;
+    margin-left: 140px;
+    border-radius: 20px;
+    padding: 180px;
+    position: relative;
+    top :-270px;
+}
+.skill::before{
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index:-1;
+}
+.Education{
+    margin-left: 5px;
+    background-color: #62b107;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+</style>
+
+</article>
+<!-- portfolio -->
+    <section style="padding: 50px 0;" id="portfolio">
+        <h1 style="font-size: 100px;text-align: center;font-family: 'Courier New', Courier, monospace;color: #fff;">My Work</h1>
+        <div class="contain">
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/arduino.gif">
+                    <div class="layer">
+                        <h3 style="font-family: 'Courier New', Courier, monospace;font-size: 50px;color: #fff;">Arduino</h3>
+                        <p></p>
+
+                        <div class="popup">
+                            <div class="popup-content">
+                                <img class="cool.img"src=""alt="">
+                            </div>
+                        </div>>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/unity-image.gif">
+                    <div class="layer">
+                        <div class="layers">
+                        <h3 style="font-family: 'Courier New', Courier, monospace;font-size: 50px;color: #fff;">Unity 3D</h3>
+                        <p>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/cira-image.gif">
+                    <div class="layer" >
+                        <h3 style="font-family: 'Courier New', Courier, monospace;font-size: 50px;color: #fff;" >Cira Core</h3>
+                        <p></p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </article>
+</main>
+<style>
+
+.work-list{
+    display:flex;
+        gap:50px;
+        justify-content:center;
+        align-items:center;
+}
+
+.work img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    display: block;
+    transform: tra;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+.popup{
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    display:none;
+    justify-content: center;
+    align-content: center;
+}
+.popup-content{
+    align-items: center;
+    background: var(--color7);
+    backdrop-filter:blur(12px) ;
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 4vw;
+    box-shadow: 0 7px 26px #ff313104;
+    display:flex;
+    justify-content: center;
+    height: 84%;
+    width: 80%;
+    overflow:hidden;
+    padding:6vh;
+
+}
+</style>
+
+ 
+<!--------contact----------->
+<div id= "contact">
+    <div class ="container">
+        <div class = "row">
+            <div class="contact-left">
+                <h1 class ="sub-title"><b>contact Me</b></h1>
+                <p>
+                     <img width="40" height="40" src=image/send.png alt="send icons"><i>apitchaya0032@gmail.com</i>>
+                </p>
+                <p><img width="50" height="50" src=image/phone.png alt="send icons">
+                    0632273791
+                </p>
+                <div class ="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100010770756992"><img width="50" height="50" src="https://img.icons8.com/ios/50/facebook-new.png" alt="facebook-new"/></a>
+                    <a href=" https://www.instagram.com/invites/contact/?igsh=1ed597h38gthe&utm_content=k5s192u"><img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                    <a href="https://line.me/ti/p/cDdVVzi58Q"><img width="50" height="50" src="https://img.icons8.com/ios/50/line-me.png" alt="line-me"/></a>
+                </div>
+                <p>                                                                                                                            </p>
+            </div>
+            <div class="contact-right"></div>
+                <from>
+                    <input type = "text" class="sizename" name="Name" placeholder="Your Name" required>
+                    <input tyoe ="email" class="sizename" name="email"placeholder="Your Email" required>
+                    <textarea name="Massage"rows="6" placeholder="Your Massage" ></textarea>
+                    <button types="submit" class="btn">Submit</button>
+                </from>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----contact------->
+<style>
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p{
+    color:#ffffff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top:30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30;
+    margin-right: 15px;
+    color: #ababab;
+    display:inline-block;
+    transition:transfrom 0.5s;}
+
+.social-icons a:hover{
+    color: #b31fc4;
+    transform: translateY(-5px);
+}
+.btn{
+    inline-size: 200px;
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    background-color: #b31fc4;
+}
+.contact-right{
+    width:100%
+}form input,textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.sizename{
+    font-size: 20px;
+}
+.sub-title{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color:#fff
+}
+
+</style>
+</body>
+</html>
